@@ -1,0 +1,31 @@
+//STL2Seq27
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//#include <iterator>
+//using namespace std;
+//
+//int main(){
+//    setlocale (LC_ALL, "Russian");
+//    vector <int> V;
+//    cout << "Введите количество элементов вектора: ";
+//    int N;
+//    cin >> N;
+//    //cout << "Введите элементы вектора через пробел: "
+//    for (int i = 0; i < N; i++){
+//        int elem;
+//        cin >> elem;
+//        V.push_back(elem);
+//
+//    }
+//    if (N == 1){
+//        cout << "У вас спина белая";
+//        return 0;
+//    }
+//    for (auto i = V.begin(); i != V.end(); i++){
+//        V.erase(i, i + 1);
+//    }
+//    copy(V.begin(), V.end(), ostream_iterator <int> (cout, " ") );
+//
+//
+//}
