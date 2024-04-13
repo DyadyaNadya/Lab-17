@@ -1,0 +1,60 @@
+//STL2Seq11
+//#include <iostream>
+//#include <list>
+//#include <vector>
+//#include <algorithm>
+//using namespace std;
+//
+//void showlist(list<int> l){
+//    list<int> :: iterator it;
+//    for (it = l.begin(); it != l.end(); it++){
+//        cout << *it << " ";
+//    }
+//}
+//int main() {
+//    setlocale(LC_ALL, "Russian");
+//    cout << "Введите количество элементов вектора. Оно должно быть не меньше пяти: ";
+//    int N;
+//    cin >> N;
+//    vector<int> V;
+//
+//    cout << "Введите элементы вектора " << "(" << N << "): ";
+//    for (int i = 0; i < N; i++) {
+//        int elem;
+//        cin >> elem;
+//        V.push_back(elem);
+//    }
+//
+//    cout << "Полученный вектор: ";
+//    for (int i = 0; i < V.size(); i++) {
+//        cout << V[i] << " ";
+//    }
+//    cout << endl;
+//
+//    list<int> L;
+//    cout << "Введите количество элементов списка (не меньше пяти): ";
+//    int K;
+//    cin >> K;
+//    cout << "Введите элементы списка " << "(" << K << "): " ;
+//    for (int i = 0; i < K; i++) {
+//        int value;
+//        cin >> value;
+//        L.push_back(value);
+//    }
+//    cout << "Полученный список: ";
+//    showlist(L);
+//    cout << endl;
+//
+//    list <int> :: iterator p;
+//    p = L.begin();
+//    int count = 0;
+//    while (count != 5) {
+//        cout << *p << " ";
+//        count++;
+//        p++;
+//    }
+//
+//    for (auto it = V.rend() - 5; it != V.rend(); it++){
+//        cout << *it << " ";
+//    }
+//}
