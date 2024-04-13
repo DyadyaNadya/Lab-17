@@ -1,0 +1,30 @@
+//STLSeq2 Дан набор целых чисел. Заполнить список L исходными числами и вывести
+//элементы списка L вначале в исходном, а затем в обратном порядке.
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main(){
+    setlocale(LC_ALL, "RUSSIAN");
+    cout << "Введите количество элементов вектора: ";
+    int N;
+    cin >> N;
+    vector <int> vec;
+    for (int i = 0; i < N; i++){
+        int value;
+        cout << "Введите " << i + 1 << " элемент вектора: ";
+        cin >> value;
+        vec.push_back(value);
+    }
+    cout << "Элементы вектора в исходном порядке: ";
+    for (int i = 0; i < vec.size(); i++){
+        cout << vec[i] << " ";
+    }
+    cout << endl;
+    reverse(vec.begin(), vec.end());
+    cout << "Элементы вектора в обратном порядке: ";
+    for (int i = 0; i < vec.size(); i++){
+        cout << vec[i] << " ";
+    }
+}
