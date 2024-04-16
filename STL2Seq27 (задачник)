@@ -1,0 +1,27 @@
+#include "pt4.h"
+using namespace std;
+
+#include <iterator>
+#include <vector>
+#include <deque>
+#include <list>
+
+typedef ptin_iterator<int> ptin;
+typedef ptout_iterator<int> ptout;
+
+void Solve()
+{
+    Task("STL2Seq27");
+    vector<int> V(ptin(0), ptin());
+    for (auto i = V.begin(); i != V.end();i++ ) {
+        i = V.erase(i);
+        if (i == V.end()) {
+       
+            break;
+        }
+        }
+    
+
+    Show(V.begin(), V.end(), "V: ");
+    copy(V.begin(), V.end(), ptout());
+}
